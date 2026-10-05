@@ -1,0 +1,100 @@
+{
+  "B0MOCK001": {
+    "age_months_min": 0,
+    "age_months_max": 3,
+    "seasons": [
+      "All-season"
+    ],
+    "festivals": [
+      "Baby shower registry"
+    ]
+  },
+  "B0MOCK002": {
+    "age_months_min": 0,
+    "age_months_max": 3,
+    "seasons": [
+      "All-season"
+    ],
+    "festivals": [
+      "Baby shower registry"
+    ]
+  },
+  "B0MOCK003": {
+    "age_months_min": 0,
+    "age_months_max": 3,
+    "seasons": [
+      "All-season"
+    ],
+    "festivals": [
+      "Baby shower registry"
+    ]
+  },
+  "WMOCK001": {
+    "age_months_min": 0,
+    "age_months_max": 3,
+    "seasons": [
+      "All-season"
+    ],
+    "festivals": [
+      "Baby shower registry"
+    ]
+  },
+  "B0MOCK010": {
+    "age_months_min": 0,
+    "age_months_max": 5,
+    "seasons": [
+      "All-season"
+    ],
+    "festivals": [
+      "Baby shower registry"
+    ]
+  },
+  "B0MOCK011": {
+    "age_months_min": 0,
+    "age_months_max": 6,
+    "seasons": [
+      "Fall",
+      "Winter"
+    ],
+    "festivals": []
+  },
+  "B0MOCK020": {
+    "age_months_min": 0,
+    "age_months_max": 18,
+    "seasons": [
+      "All-season"
+    ],
+    "festivals": [
+      "Baby shower registry"
+    ]
+  },
+  "B0MOCK030": {
+    "age_months_min": 12,
+    "age_months_max": 36,
+    "seasons": [
+      "Winter"
+    ],
+    "festivals": []
+  },
+  "B0MOCK040": {
+    "age_months_min": 12,
+    "age_months_max": 36,
+    "seasons": [
+      "All-season"
+    ],
+    "festivals": [
+      "Christmas",
+      "Birthday"
+    ]
+  },
+  "B0MOCK041": {
+    "age_months_min": 12,
+    "age_months_max": 36,
+    "seasons": [
+      "Fall"
+    ],
+    "festivals": [
+      "Halloween"
+    ]
+  }
+}
