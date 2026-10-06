@@ -24,10 +24,10 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# Allow the WordPress frontend (any origin, for now — tighten before launch)
+# Allow the WordPress frontend (apex and www domains only)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://nimblesavings.com", "https://www.nimblesavings.com"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -40,6 +40,6 @@ app.include_router(watchlist.router)
 def root():
     return {
         "status": "ok",
-        "try": "/products/Newborn (0-3mo)/Feeding",
+        "try": "/products/Baby & Infant (0-12mo)/Feeding",
         "docs": "/docs",
     }
