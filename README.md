@@ -93,6 +93,14 @@ or documented live implementation below it. To go live:
 
 ## Price-drop alerts (new)
 
+> **Switched off by default.** These routes have no ownership check yet (anyone
+> can read, add to or delete any email's watchlist), so they and the price-check
+> scheduler only load when the environment variable `WATCHLIST_ENABLED=true` is
+> set. Leave it unset in production until alerts launch with email
+> confirmation, private links, consent records and unsubscribe. The internal
+> `/products/{stage}/{category}/{subcategory}/needs-curation` route likewise
+> needs `INTERNAL_ROUTES_ENABLED=true`.
+
 Parents can subscribe an email to a product's price:
 
 ```

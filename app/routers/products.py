@@ -7,6 +7,9 @@ from app.services import bestsellers, prices, promos, recalls, taxonomy, curatio
 
 router = APIRouter(prefix="/products", tags=["products"])
 
+# Internal tools, mounted only when INTERNAL_ROUTES_ENABLED=true (see main.py).
+internal_router = APIRouter(prefix="/products", tags=["internal"])
+
 # Minimum review count a product needs before its own rating is trusted at
 # full weight. Below this, its score gets pulled toward the category
 # average — same idea as IMDB's "Top 250" weighted rating, so a brand-new
@@ -161,7 +164,7 @@ async def get_taxonomy_tree():
     return category_structure.get_full_tree()
 
 
-@router.get("/{age_stage}/{category}/{subcategory}/needs-curation")
+@internal_router.get("/{age_stage}/{category}/{subcategory}/needs-curation")
 async def get_subcategory_needing_curation(age_stage: str, category: str, subcategory: str):
     """Run after refreshing live bestsellers to see which products in this
     subcategory have no age/season/festival tags yet."""
